@@ -1,4 +1,3 @@
-import htmlParser as hp
 import sys
 import time
 import telepot
@@ -7,6 +6,11 @@ from telepot.loop import MessageLoop
 import json
 import datetime
 import os
+
+
+import htmlParser as hp
+import TOKEN, chatID from secrets
+
 
 magazine_url = "http://jurnali-online.ru/xaker"
 ydiskURL = "https://cloud-api.yandex.net/v1/disk/public/resources?public_key="
