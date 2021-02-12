@@ -1,0 +1,7 @@
+name: magasize_downloader_env
+dependencies:
+  - python=3.6
+  - beautifulsoup4
+  - pip
+  - pip:
+    - telepot
