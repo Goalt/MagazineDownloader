@@ -24,6 +24,6 @@ lastFromWeb = hp.getLast(magazine_url)
 lastSended = hp.read(abs_file_path)
 if lastSended != lastFromWeb:
     (title, urlImage, urlDisk) = hp.getItemInfo(lastFromWeb)
-    bot.sendMessage(chatID, "Новый Выпуск!!!")
+    bot.sendMessage(chatID, "New Release!!!")
     bot.sendMessage(chatID, title + "\n" + urlDisk)
     hp.save(lastFromWeb, abs_file_path)
