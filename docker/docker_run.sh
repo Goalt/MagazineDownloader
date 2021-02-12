@@ -1,0 +1,1 @@
+docker run -d  --net host --restart unless-stopped magazine_downloader:latest
