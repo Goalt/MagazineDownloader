@@ -1,0 +1,1 @@
+docker build -t magazine_downloader:latest -f docker/Dockerfile .
