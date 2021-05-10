@@ -2,6 +2,7 @@ import requests
 from bs4 import BeautifulSoup
 from urllib.parse import urlparse
 
+
 def getURLDisk(htmlText):
 	soup = BeautifulSoup(htmlText, features="html.parser")
 	item = soup.find('div', {'class': 'post2 singlepost2'})
@@ -25,20 +26,20 @@ def getItemInfo(url):
 	urlDisk = getURLDisk(r.text)
 	return (title, urlImage, urlDisk)
 
-# Возвращает url последнего выпуска
+# Returns url of last release
 def getLast(url):
 	r = requests.get(url)
 	soup = BeautifulSoup(r.text, features="html.parser")
 	item = soup.find('div', {'id': 'contentindex'})
 	return item.find('div', {'class': 'zagnomera'}).h3.a.get("href")
 
-# Сохранить str в файл
+# Save str to file
 def save(s, fileName):
 	f = open(fileName, "w")
 	f.write(s)
 	f.close()
 
-# Прочитать str из файла
+# Read str from file
 def read(fileName):
 	f = open(fileName, "r")
 	s = f.read()

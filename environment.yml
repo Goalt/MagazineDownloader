@@ -1,4 +1,4 @@
-name: magasize_downloader_env
+name: magazine_downloader_env
 dependencies:
   - python=3.6
   - beautifulsoup4

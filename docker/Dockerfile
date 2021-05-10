@@ -15,4 +15,4 @@ COPY ./secrets.py secrets.py
 COPY ./htmlParser.py htmlParser.py
 COPY ./tmp tmp
 
-CMD watch -n 60 /root/miniconda3/envs/magasize_downloader_env/bin/python main.py
+CMD watch -n 60 /root/miniconda3/envs/magazine_downloader_env/bin/python main.py
